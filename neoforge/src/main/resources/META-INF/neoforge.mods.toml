@@ -30,7 +30,7 @@ versionRange = "[1.21.9,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.gsscs]]
+[[dependencies.parchedandbogged]]
 modId = "architectury"
 type = "required"
 versionRange = "[18.0.8,)"
