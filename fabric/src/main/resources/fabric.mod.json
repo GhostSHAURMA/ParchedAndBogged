@@ -8,8 +8,9 @@
     "GhostSHAURMA"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://modrinth.com/mod/parchedandbogged",
+	"issues": "https://github.com/GhostSHAURMA/ParchedAndBogged/issues",
+    "sources": "https://github.com/GhostSHAURMA/ParchedAndBogged"
   },
   "license": "GPL-3.0",
   "icon": "icon.png",
@@ -29,6 +30,7 @@
     "fabricloader": ">=0.18.0",
     "minecraft": ">=1.21.9",
     "java": ">=21",
-    "fabric-api": "*"
+    "fabric-api": "*",
+    "architectury": ">=18.0.8"
   }
 }

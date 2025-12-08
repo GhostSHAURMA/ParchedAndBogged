@@ -1,5 +1,6 @@
 modLoader = "javafml"
 loaderVersion = "[10,)"
+issueTrackerURL = "https://github.com/GhostSHAURMA/ParchedAndBogged/issues"
 #issueTrackerURL = ""
 license = "GPL-3.0"
 
@@ -9,6 +10,7 @@ logoFile = "icon.png"
 modId = "parchedandbogged"
 version = "${version}"
 displayName = "Parched And Bogged"
+displayURL = "https://modrinth.com/mod/parchedandbogged"
 authors = "GhostSHAURMA"
 description = '''
 Adding mobs like the Dune I think are neat
@@ -26,6 +28,13 @@ modId = "minecraft"
 type = "required"
 versionRange = "[1.21.9,)"
 ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.gsscs]]
+modId = "architectury"
+type = "required"
+versionRange = "[18.0.8,)"
+ordering = "AFTER"
 side = "BOTH"
 
 [[mixins]]
