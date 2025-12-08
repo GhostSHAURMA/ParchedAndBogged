@@ -1,0 +1,32 @@
+modLoader = "javafml"
+loaderVersion = "[10,)"
+#issueTrackerURL = ""
+license = "GPL-3.0"
+
+logoFile = "icon.png"
+
+[[mods]]
+modId = "parchedandbogged"
+version = "${version}"
+displayName = "Parched And Bogged"
+authors = "GhostSHAURMA"
+description = '''
+Adding mobs like the Dune I think are neat
+'''
+
+[[dependencies.parchedandbogged]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.9,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.parchedandbogged]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.9,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[mixins]]
+config = "parchedandbogged.mixins.json"

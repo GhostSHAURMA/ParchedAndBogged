@@ -1,0 +1,18 @@
+pluginManagement {
+    repositories {
+        maven { url = 'https://maven.fabricmc.net/' }
+        maven { url = 'https://maven.architectury.dev/' }
+        maven { url = 'https://files.minecraftforge.net/maven/' }
+        gradlePluginPortal()
+    }
+}
+
+rootProject.name = 'parchedandbogged'
+
+include 'common-parchedandbogged'
+include 'fabric-parchedandbogged'
+include 'neoforge-parchedandbogged'
+
+project(":common-parchedandbogged").projectDir = file("common")
+project(":fabric-parchedandbogged").projectDir = file("fabric")
+project(":neoforge-parchedandbogged").projectDir = file("neoforge")

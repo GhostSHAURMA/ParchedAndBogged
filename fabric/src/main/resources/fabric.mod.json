@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "parchedandbogged",
+  "version": "1.0.0",
+  "name": "Parched And Bogged",
+  "description": "Adding mobs like the Dune I think are neat",
+  "authors": [
+    "GhostSHAURMA"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "GPL-3.0",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "ma.shaur.parchedandbogged.fabric.ParchedAndBoggedFabric"
+    ],
+    "client": [
+      "ma.shaur.parchedandbogged.fabric.client.ParchedAndBoggedFabricClient"
+    ]
+  },
+  "mixins": [
+    "parchedandbogged.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": ">=1.21.9",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
