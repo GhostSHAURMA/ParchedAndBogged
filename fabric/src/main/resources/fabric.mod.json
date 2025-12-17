@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "parchedandbogged",
-  "version": "1.0.0",
+  "version": "${version}",
   "name": "Parched And Bogged",
   "description": "Adding mobs like the Dune I think are neat",
   "authors": [
@@ -28,9 +28,9 @@
   ],
   "depends": {
     "fabricloader": ">=0.18.0",
-    "minecraft": ">=1.21.9",
+    "minecraft": "=1.21.11",
     "java": ">=21",
     "fabric-api": "*",
-    "architectury": ">=18.0.5"
+    "architectury": ">=19.0.1"
   }
 }

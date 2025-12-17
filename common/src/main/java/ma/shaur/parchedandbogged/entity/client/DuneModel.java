@@ -10,12 +10,12 @@ import net.minecraft.client.model.geom.builders.CubeListBuilder;
 import net.minecraft.client.model.geom.builders.LayerDefinition;
 import net.minecraft.client.model.geom.builders.MeshDefinition;
 import net.minecraft.client.model.geom.builders.PartDefinition;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.util.Mth;
 
 public class DuneModel extends EntityModel<DuneRenderState>
 {
-	public static final ModelLayerLocation DUNE = new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath(ParchedAndBogged.MOD_ID, "dune"), "main");
+	public static final ModelLayerLocation DUNE = new ModelLayerLocation(Identifier.fromNamespaceAndPath(ParchedAndBogged.MOD_ID, "dune"), "main");
 	private final ModelPart body;
 	private final ModelPart head;
 	private final ModelPart rightHindLeg;

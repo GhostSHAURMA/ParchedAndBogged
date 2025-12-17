@@ -6,13 +6,13 @@ import ma.shaur.parchedandbogged.ParchedAndBogged;
 import ma.shaur.parchedandbogged.entity.Dune;
 import net.minecraft.client.renderer.entity.EntityRendererProvider.Context;
 import net.minecraft.client.renderer.entity.MobRenderer;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.util.Mth;
 
 public class DuneRenderer extends MobRenderer<Dune, DuneRenderState, DuneModel>
 {
-	private static final ResourceLocation DUNE_LOCATION = ResourceLocation.fromNamespaceAndPath(ParchedAndBogged.MOD_ID, "textures/entity/dune/dune.png");
-	private static final ResourceLocation DUNE_RED_LOCATION = ResourceLocation.fromNamespaceAndPath(ParchedAndBogged.MOD_ID, "textures/entity/dune/dune_red.png");
+	private static final Identifier DUNE_LOCATION = Identifier.fromNamespaceAndPath(ParchedAndBogged.MOD_ID, "textures/entity/dune/dune.png");
+	private static final Identifier DUNE_RED_LOCATION = Identifier.fromNamespaceAndPath(ParchedAndBogged.MOD_ID, "textures/entity/dune/dune_red.png");
 	
 	public DuneRenderer(Context context)
 	{
@@ -38,7 +38,7 @@ public class DuneRenderer extends MobRenderer<Dune, DuneRenderState, DuneModel>
 		return (int) (f * 10.0F) % 2 == 0 ? 0.0F : Mth.clamp(f, 0.5F, 1.0F);
 	}
 
-	public ResourceLocation getTextureLocation(DuneRenderState duneRenderState)
+	public Identifier getTextureLocation(DuneRenderState duneRenderState)
 	{
 		return duneRenderState.isRed ? DUNE_RED_LOCATION : DUNE_LOCATION;
 	}
